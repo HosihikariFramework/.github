@@ -4,7 +4,7 @@
 
 A plugin container that brings .NET plugins to Minecraft Bedrock Dedicated Server (BDS). Also known as 星光框架.
 
-A carrier (LeviLamina or Endstone) loads the native HostingShim, which hosts the CLR inside the server process. The managed core discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. Providers supply the compiled CLR assemblies the core loads into an ALC. The official providers are assembly, C#, and F#; RpcProvider is the first-class exception: a cross-process bridge outside that set.
+A carrier (LeviLamina or Endstone) loads the native HostingShim, which hosts the CLR inside the server process. The managed core discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. Providers come in two official classes: first-class providers compile C#/F# source AOT to IL; RpcProvider is the exception first-class provider, a cross-process bridge. The core also loads precompiled assemblies directly.
 
 **Current release**: Abstractions 0.7.0 · Shim v0.2.1 · Provider v0.1.0  
 **Platforms**: Windows x64; LeviLamina 26.51 and Endstone 0.11  
@@ -31,11 +31,11 @@ lip install github.com/HosihikariFramework/Shim
 # Endstone
 lip install github.com/HosihikariFramework/Shim#endstone
 
-# Official providers
+# First-class providers
 lip install github.com/HosihikariFramework/CSharpProvider
 lip install github.com/HosihikariFramework/FSharpProvider
 
-# The exception: cross-process bridge
+# Exception first-class provider
 lip install github.com/HosihikariFramework/RpcProvider
 ```
 
@@ -48,9 +48,9 @@ A plugin package is a directory under `plugins/` whose name matches `name` in it
 | [Shim](https://github.com/HosihikariFramework/Shim) | Native HostingShim: hosts the CLR in BDS and hands control to the managed core |
 | [PluginManagement](https://github.com/HosihikariFramework/PluginManagement) | Managed core: discovery, dependency graph, isolated loading, lifecycle, unload verification |
 | [Abstractions](https://github.com/HosihikariFramework/Abstractions) | Plugin contract, published on [NuGet](https://www.nuget.org/packages/Hosihikari.Abstractions) |
-| [CSharpProvider](https://github.com/HosihikariFramework/CSharpProvider) | C# source plugins, compiled at load with Roslyn |
-| [FSharpProvider](https://github.com/HosihikariFramework/FSharpProvider) | F# source plugins, compiled at load |
-| [RpcProvider](https://github.com/HosihikariFramework/RpcProvider) | First-class exception: a cross-process bridge over line-delimited JSON-RPC 2.0, with Node/QuickJS/Python/Java/Kotlin bindings |
+| [CSharpProvider](https://github.com/HosihikariFramework/CSharpProvider) | First-class provider: C# source AOT to IL at load with Roslyn |
+| [FSharpProvider](https://github.com/HosihikariFramework/FSharpProvider) | First-class provider: F# source AOT to IL at load |
+| [RpcProvider](https://github.com/HosihikariFramework/RpcProvider) | Exception first-class provider: a cross-process bridge over line-delimited JSON-RPC 2.0, with Node/QuickJS/Python/Java/Kotlin bindings |
 | [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | Fork of McMaster.NETCore.Plugins with RID-first native library resolution |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | HOCON implementation used for framework configuration |
 | [hosihikariframework.github.io](https://github.com/HosihikariFramework/hosihikariframework.github.io) | Documentation site and example plugins |
