@@ -57,4 +57,4 @@ lip install github.com/HosihikariFramework/RpcProvider
 
 ## 许可与信任边界
 
-LGPL-3.0-or-later。插件与宿主同进程运行，框架按完全受信设计；不要加载不受信的插件。
+LGPL-3.0-or-later。进程内插件与宿主同进程运行，进程外插件在子进程中运行；两类都完全受信，框架不提供权限边界；不要加载不受信的插件。

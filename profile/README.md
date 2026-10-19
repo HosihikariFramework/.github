@@ -57,4 +57,4 @@ A plugin package is a directory under `plugins/` whose name matches `name` in it
 
 ## License and trust boundary
 
-LGPL-3.0-or-later. Plugins run in the same process as the host and are fully trusted; do not load untrusted plugins.
+LGPL-3.0-or-later. In-process plugins run in the host process; cross-process plugins run in a child process. Both are fully trusted, and the framework provides no permission boundary; do not load untrusted plugins.
