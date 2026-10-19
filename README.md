@@ -1,3 +1,5 @@
-# 组织资料
+# Organization profile
 
-组织主页显示的内容在 [profile/README.md](profile/README.md)。
+[English](README.md) | [简体中文](README.zh_hans.md)
+
+The organization profile shown on GitHub lives in [profile/README.md](profile/README.md).
