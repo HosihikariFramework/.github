@@ -6,7 +6,7 @@
 
 载体（LeviLamina、Endstone 或 Linux 自持态）加载原生 HostingShim，Shim 把 CLR 托管进服务器进程；托管核心负责插件发现、依赖排序、隔离装载与生命周期。官方 Provider 分两类：一等 Provider 把 C#/F# 源码 AOT 为 IL；RpcProvider 是例外一等 Provider，跨进程桥。预编译程序集由核心内置入口装载。
 
-**当前版本**：Abstractions 0.7.0 · Shim v0.4.0 · Provider v0.1.0  
+**当前版本**：Abstractions 0.7.0 · Shim v0.4.1 · Provider v0.1.0  
 **平台**：Windows x64（LeviLamina 26.51、Endstone 0.11）· Linux x64（Endstone 0.11、自持态 BDS 1.21.3）  
 **契约**：`api` 2 · 清单 `format_version` 1
 
