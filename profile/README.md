@@ -4,10 +4,10 @@
 
 A plugin container that brings .NET plugins to Minecraft Bedrock Dedicated Server (BDS). Also known as 星光框架.
 
-A carrier (LeviLamina or Endstone) loads the native HostingShim, which hosts the CLR inside the server process. The managed core discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. Providers come in two official classes: first-class providers compile C#/F# source AOT to IL; RpcProvider is the exception first-class provider, a cross-process bridge. The core also loads precompiled assemblies directly.
+A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed core discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. Providers come in two official classes: first-class providers compile C#/F# source AOT to IL; RpcProvider is the exception first-class provider, a cross-process bridge. The core also loads precompiled assemblies directly.
 
-**Current release**: Abstractions 0.7.0 · Shim v0.2.1 · Provider v0.1.0  
-**Platforms**: Windows x64; LeviLamina 26.51 and Endstone 0.11  
+**Current release**: Abstractions 0.7.0 · Shim v0.4.0 · Provider v0.1.0  
+**Platforms**: Windows x64 (LeviLamina 26.51, Endstone 0.11) · Linux x64 (Endstone 0.11, self-hosted BDS 1.21.3)  
 **Contract**: `api` 2 · manifest `format_version` 1
 
 ## Documentation
@@ -25,11 +25,15 @@ A carrier (LeviLamina or Endstone) loads the native HostingShim, which hosts the
 Run in the server root:
 
 ```powershell
-# LeviLamina
+# self-hosted Linux
 lip install github.com/HosihikariFramework/Shim
 
-# Endstone
+# LeviLamina
+lip install github.com/HosihikariFramework/Shim#levilamina
+
+# Endstone (Windows / Linux)
 lip install github.com/HosihikariFramework/Shim#endstone
+lip install github.com/HosihikariFramework/Shim#endstone_linux
 
 # First-class providers
 lip install github.com/HosihikariFramework/CSharpProvider
