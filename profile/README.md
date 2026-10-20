@@ -1,3 +1,5 @@
+# Hosihikari Framework
+
 <table align="right">
   <tr>
     <td align="right">
@@ -6,8 +8,6 @@
     </td>
   </tr>
 </table>
-
-# Hosihikari Framework
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 

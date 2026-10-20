@@ -1,3 +1,5 @@
+# 星光 · 星光框架
+
 <table align="right">
   <tr>
     <td align="right">
@@ -6,8 +8,6 @@
     </td>
   </tr>
 </table>
-
-# 星光 · 星光框架
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 
