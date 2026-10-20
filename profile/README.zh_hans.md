@@ -64,4 +64,4 @@ lip install github.com/HosihikariFramework/RpcProvider
 
 ## 许可与信任边界
 
-框架与契约使用 LGPL-3.0-or-later；插件模板与文档代码示例为 MIT-0；文档正文为 CC BY-SA 4.0。进程内插件与宿主同进程运行，进程外插件在子进程中运行；两类都完全受信，框架不提供权限边界；不要加载不受信的插件。
+框架与 Provider 使用 LGPL-3.0-or-later；Abstractions 0.7.1 及之后为 MIT，0.7.0 包仍为 LGPL-3.0-or-later。插件模板与文档代码示例为 MIT-0；文档正文为 CC BY-SA 4.0。进程内插件与宿主同进程运行，进程外插件在子进程中运行；两类都完全受信，框架不提供权限边界；不要加载不受信的插件。
