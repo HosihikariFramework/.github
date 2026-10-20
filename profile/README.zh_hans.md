@@ -55,6 +55,9 @@ lip install github.com/HosihikariFramework/RpcProvider
 | [CSharpProvider](https://github.com/HosihikariFramework/CSharpProvider) | 一等 Provider：C# 源码 Roslyn 装载时 AOT 为 IL |
 | [FSharpProvider](https://github.com/HosihikariFramework/FSharpProvider) | 一等 Provider：F# 源码装载时 AOT 为 IL |
 | [RpcProvider](https://github.com/HosihikariFramework/RpcProvider) | 例外一等 Provider：跨进程桥，行分隔 JSON-RPC 2.0 over stdio，带 Node/QuickJS/Python/Java/Kotlin 绑定 |
+| [CSharpPluginTemplate](https://github.com/HosihikariFramework/CSharpPluginTemplate) | 源码 C# 插件模板 |
+| [FSharpPluginTemplate](https://github.com/HosihikariFramework/FSharpPluginTemplate) | 源码 F# 插件模板 |
+| [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | 进程外模板：Node.js/TypeScript、Python、Kotlin/JVM |
 | [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | McMaster.NETCore.Plugins 的 fork：本机库按当前 RID 优先解析 |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | 框架配置使用的 HOCON 实现 |
 | [hosihikariframework.github.io](https://github.com/HosihikariFramework/hosihikariframework.github.io) | 文档站点与示例插件 |

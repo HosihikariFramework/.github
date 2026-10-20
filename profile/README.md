@@ -55,6 +55,9 @@ A plugin package is a directory under `plugins/` whose name matches `name` in it
 | [CSharpProvider](https://github.com/HosihikariFramework/CSharpProvider) | First-class provider: C# source AOT to IL at load with Roslyn |
 | [FSharpProvider](https://github.com/HosihikariFramework/FSharpProvider) | First-class provider: F# source AOT to IL at load |
 | [RpcProvider](https://github.com/HosihikariFramework/RpcProvider) | Exception first-class provider: a cross-process bridge over line-delimited JSON-RPC 2.0, with Node/QuickJS/Python/Java/Kotlin bindings |
+| [CSharpPluginTemplate](https://github.com/HosihikariFramework/CSharpPluginTemplate) | Source C# plugin template |
+| [FSharpPluginTemplate](https://github.com/HosihikariFramework/FSharpPluginTemplate) | Source F# plugin template |
+| [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | Out-of-process templates: Node.js/TypeScript, Python, Kotlin/JVM |
 | [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | Fork of McMaster.NETCore.Plugins with RID-first native library resolution |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | HOCON implementation used for framework configuration |
 | [hosihikariframework.github.io](https://github.com/HosihikariFramework/hosihikariframework.github.io) | Documentation site and example plugins |
