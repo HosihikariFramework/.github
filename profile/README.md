@@ -1,3 +1,12 @@
+<table align="right">
+  <tr>
+    <td align="right">
+      <img src="assets/mascot.png" width="240" alt="Hosi Hikari, the Hosihikari Framework mascot"><br>
+      <sub>Art by 墨鱼纸鸢</sub>
+    </td>
+  </tr>
+</table>
+
 # Hosihikari Framework
 
 [English](README.md) | [简体中文](README.zh_hans.md)

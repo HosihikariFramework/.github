@@ -1,3 +1,12 @@
+<table align="right">
+  <tr>
+    <td align="right">
+      <img src="assets/mascot.png" width="240" alt="星光（Hosi Hikari），星光框架吉祥物"><br>
+      <sub>立绘：墨鱼纸鸢</sub>
+    </td>
+  </tr>
+</table>
+
 # 星光 · 星光框架
 
 [English](README.md) | [简体中文](README.zh_hans.md)
