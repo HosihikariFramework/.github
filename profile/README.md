@@ -15,7 +15,7 @@ A plugin container that brings .NET plugins to Minecraft Bedrock Dedicated Serve
 
 A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed core discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. Providers come in two official classes: first-class providers compile C#/F# source AOT to IL; RpcProvider is the exception first-class provider, a cross-process bridge. The core also loads precompiled assemblies directly.
 
-**Current release**: Abstractions 0.7.1 · Core v0.6.0 · Shim v0.6.1 · C#/Rpc Provider v0.2.2 · F# Provider v0.1.2  
+**Current release**: Abstractions 0.7.1 · Core v0.7.0 · Shim v0.7.0 · C#/Rpc Provider v0.2.2 · F# Provider v0.1.2  
 **Platforms**: Windows x64 (LeviLamina 26.51, Endstone 0.11) · Linux x64 (Endstone 0.11, self-hosted BDS 1.21.3)  
 **Contract**: `api` 2 · manifest `format_version` 1
 
