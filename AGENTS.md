@@ -25,7 +25,7 @@ preview and confirm every form still appears under **New issue**.
 ## Invariants
 
 - English is the primary profile; keep `README.zh_hans.md` in sync.
-- Issue forms under `.github/.github/ISSUE_TEMPLATE/` are organization defaults. A repository with
+- Issue forms under `.github/ISSUE_TEMPLATE/` are organization defaults. A repository with
   its own `ISSUE_TEMPLATE` folder ignores the entire default folder, including `config.yml`.
 - Default forms must not reference labels unless those labels exist in every consuming repository.
 - Work on a branch, open a pull request, and squash merge. Do not push to `main`.
