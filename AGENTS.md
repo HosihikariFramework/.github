@@ -34,4 +34,5 @@ preview and confirm every form still appears under **New issue**.
   corresponding default.
 - Do not add `SECURITY.md` until a private reporting channel exists. A public issue template must not
   point at a reporting path that does not work.
+- Public files must not link to the private `Design` repository.
 - Work on a branch, open a pull request, and squash merge. Do not push to `main`.

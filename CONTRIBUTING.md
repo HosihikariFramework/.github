@@ -7,8 +7,8 @@ organization unless that repository has its own `CONTRIBUTING.md`.
 
 - Search existing issues and the [documentation](https://hf.srcz.one/).
 - Use the issue templates for bugs, feature requests, and documentation problems.
-- For a large API, lifecycle, or architecture change, open an issue first and link the relevant
-  [ADR](https://github.com/HosihikariFramework/Design).
+- For a large API, lifecycle, or architecture change, open an issue first and describe the design and
+  trade-offs.
 - Do not include secrets, credentials, personal data, or a copied game server in a commit.
 
 ## Workflow

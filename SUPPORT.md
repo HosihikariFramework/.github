@@ -14,5 +14,5 @@ versions, environment, reproduction steps, and logs. Remove secrets and personal
 
 ## Questions and design discussion
 
-Use the repository's Discussions tab when it is enabled. For a design proposal, link the relevant
-[Design record](https://github.com/HosihikariFramework/Design).
+Use the repository's Discussions tab when it is enabled. For a design proposal, open an issue in the
+owning repository and describe the use case and trade-offs.
