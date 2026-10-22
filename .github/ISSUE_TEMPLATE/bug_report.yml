@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a reproducible defect in the framework, a loader, a carrier, or the documentation.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues and the [documentation](https://hf.srcz.one/) first.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal steps, commands, manifests, or a repository that reproduces the problem.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the framework is involved?
+      options:
+        - Plugin manager or plugin contract
+        - HostingShim or carrier
+        - C# loader
+        - F# loader
+        - RPC loader
+        - Plugin template
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Framework, loader, shim, or NuGet package version.
+      placeholder: "PluginManager 1.1.0, HostingShim 1.1.0, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, BDS version, carrier and loader versions, .NET runtime, Node/Python/JDK if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant log lines. Remove secrets and personal data.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and the documentation.
+          required: true
+        - label: This report contains no secrets or personal data.
+          required: true
