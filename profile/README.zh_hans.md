@@ -52,13 +52,18 @@ lip install github.com/HosihikariFramework/RpcLoader
 
 # 预编译插件模板
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
-
-# 插件工程构建与测试包
-dotnet add package Hosihikari.Plugin.Build --version 1.0.0
-dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 
 插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[快速开始](https://hosihikariframework.github.io/zh/quick-start/)。
+
+## 插件工程包
+
+在插件工程目录执行：
+
+```powershell
+dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+dotnet add package Hosihikari.Testing --version 1.0.0
+```
 
 ## 仓
 

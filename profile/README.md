@@ -52,13 +52,18 @@ lip install github.com/HosihikariFramework/RpcLoader
 
 # Precompiled plugin templates
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
-
-# Plugin project build and test packages
-dotnet add package Hosihikari.Plugin.Build --version 1.0.0
-dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 
 A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [quick start](https://hosihikariframework.github.io/quick-start/).
+
+## Plugin project packages
+
+Run in the plugin project directory:
+
+```powershell
+dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+dotnet add package Hosihikari.Testing --version 1.0.0
+```
 
 ## Repositories
 
