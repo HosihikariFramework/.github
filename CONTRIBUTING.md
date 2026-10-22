@@ -15,8 +15,8 @@ organization unless that repository has its own `CONTRIBUTING.md`.
 
 1. Work on a branch. Public default branches are protected; direct pushes are rejected.
 2. Follow the repository's `AGENTS.md` for build, test, and verification commands.
-3. Keep the change focused; update tests, documentation, and the glossary or ADR when behavior or
-   terminology changes.
+3. Keep the change focused; update tests and documentation, and describe lifecycle, terminology,
+   or public API changes in the pull request.
 4. Fill in the pull request template and describe the verification you ran.
 5. Wait for review, then squash merge.
 
