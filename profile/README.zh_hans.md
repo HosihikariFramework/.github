@@ -58,10 +58,15 @@ dotnet new install Hosihikari.Plugin.Templates::1.0.1
 
 ## 插件工程包
 
-在插件工程目录执行：
+在插件工程目录添加构建包：
 
 ```powershell
 dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+```
+
+在测试工程目录添加测试包：
+
+```powershell
 dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 

@@ -58,10 +58,15 @@ A plugin package is a directory under `plugins/` whose name matches `name` in it
 
 ## Plugin project packages
 
-Run in the plugin project directory:
+In the plugin project directory, add the build package:
 
 ```powershell
 dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+```
+
+In the test project directory, add the test package:
+
+```powershell
 dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 
