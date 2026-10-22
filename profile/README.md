@@ -15,7 +15,7 @@ A plugin container that brings .NET plugins to Minecraft Bedrock Dedicated Serve
 
 A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed PluginManager discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. C# and F# loaders compile source at load; RpcLoader runs plugins out of process; the core's built-in loader handles precompiled assemblies.
 
-**Current release**: Hosihikari.Plugin.Abstractions 1.0.0 · PluginManager v1.0.0 · HostingShim v1.0.0 · C#/F#/RPC Loaders v1.0.0 · Plugin Templates 1.0.1  
+**Current release**: Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.1.0 · HostingShim v1.1.0 · C#/F#/RPC Loaders v1.0.0 · Plugin.Build / Testing 1.0.0 · Plugin Templates 1.0.1  
 **Platforms**: Windows x64 (LeviLamina 26.51, Endstone 0.11) · Linux x64 (Endstone 0.11, self-hosted BDS 1.21.3)  
 **Contract**: `api_version` 2 · manifest `manifest_version` 1
 
@@ -52,6 +52,10 @@ lip install github.com/HosihikariFramework/RpcLoader
 
 # Precompiled plugin templates
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
+
+# Plugin project build and test packages
+dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 
 A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [quick start](https://hosihikariframework.github.io/quick-start/).

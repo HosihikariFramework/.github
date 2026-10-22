@@ -15,7 +15,7 @@
 
 载体（LeviLamina、Endstone 或 Linux 自持态）加载原生 HostingShim，Shim 把 CLR 托管进服务器进程；托管核心 PluginManager 负责插件发现、依赖排序、隔离装载与生命周期。C# 与 F# 加载器在装载时编译源码；RpcLoader 在子进程中运行插件；核心内置加载器处理预编译程序集。
 
-**当前版本**：Hosihikari.Plugin.Abstractions 1.0.0 · PluginManager v1.0.0 · HostingShim v1.0.0 · C#/F#/RPC 加载器 v1.0.0 · 插件模板 1.0.1  
+**当前版本**：Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.1.0 · HostingShim v1.1.0 · C#/F#/RPC 加载器 v1.0.0 · 构建与测试包 1.0.0 · 插件模板 1.0.1  
 **平台**：Windows x64（LeviLamina 26.51、Endstone 0.11）· Linux x64（Endstone 0.11、自持态 BDS 1.21.3）  
 **契约**：`api_version` 2 · 清单 `manifest_version` 1
 
@@ -52,6 +52,10 @@ lip install github.com/HosihikariFramework/RpcLoader
 
 # 预编译插件模板
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
+
+# 插件工程构建与测试包
+dotnet add package Hosihikari.Plugin.Build --version 1.0.0
+dotnet add package Hosihikari.Testing --version 1.0.0
 ```
 
 插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[快速开始](https://hosihikariframework.github.io/zh/quick-start/)。
