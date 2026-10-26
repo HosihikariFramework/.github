@@ -3,7 +3,7 @@
 <table align="right">
   <tr>
     <td align="right">
-      <img src="assets/mascot.png" width="240" alt="星光（Hosi Hikari），星光框架吉祥物"><br>
+      <img src="assets/mascot.png" width="240" alt="星光"><br>
       <sub>立绘：墨鱼纸鸢</sub>
     </td>
   </tr>
@@ -11,7 +11,7 @@
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 
-把 .NET 插件带进 Minecraft 基岩版专用服务器（BDS）的插件容器。
+在 Minecraft 基岩版专用服务器（BDS）里加载并管理 .NET 插件。
 
 载体（LeviLamina、Endstone 或 Linux 自持态）加载原生 HostingShim，Shim 把 CLR 托管进服务器进程；托管核心 PluginManager 负责插件发现、依赖排序、隔离装载与生命周期。C# 与 F# 加载器在装载时编译源码；RpcLoader 在子进程中运行插件；核心内置加载器处理预编译程序集。
 
