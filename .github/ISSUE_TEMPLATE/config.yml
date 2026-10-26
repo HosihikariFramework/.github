@@ -3,3 +3,6 @@ contact_links:
   - name: Hosihikari Framework documentation
     url: https://hf.srcz.one/
     about: Setup guides, API reference, and troubleshooting.
+  - name: Report a vulnerability
+    url: https://github.com/HosihikariFramework/PluginManager/security/advisories/new
+    about: Private report. The advisory can be moved to the owning component afterwards.
