@@ -12,6 +12,10 @@
 Open an issue in the repository that owns the component and choose the matching template. Include
 versions, environment, reproduction steps, and logs. Remove secrets and personal data.
 
+## Security
+
+Report vulnerabilities through the private form, not a public issue. See [SECURITY.md](SECURITY.md).
+
 ## Questions and design discussion
 
 Use the repository's Discussions tab when it is enabled. For a design proposal, open an issue in the
