@@ -3,7 +3,7 @@
 <table align="right">
   <tr>
     <td align="right">
-      <img src="assets/mascot.png" width="240" alt="Hosi Hikari, the Hosihikari Framework mascot"><br>
+      <img src="assets/mascot.png" width="240" alt="Hosi Hikari"><br>
       <sub>Art by 墨鱼纸鸢</sub>
     </td>
   </tr>
@@ -11,7 +11,7 @@
 
 [English](README.md) | [简体中文](README.zh_hans.md)
 
-A plugin container that brings .NET plugins to Minecraft Bedrock Dedicated Server (BDS). Also known as 星光框架.
+Loads and manages .NET plugins inside Minecraft Bedrock Dedicated Server (BDS). Also known as 星光框架.
 
 A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed PluginManager discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. C# and F# loaders compile source at load; RpcLoader runs plugins out of process; the core's built-in loader handles precompiled assemblies.
 
