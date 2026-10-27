@@ -21,13 +21,11 @@ A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the nat
 
 ## Documentation
 
-- [Online documentation](https://hosihikariframework.github.io/) · [简体中文](https://hosihikariframework.github.io/zh/)
-- [Quick start](https://hosihikariframework.github.io/quick-start/)
-- [Plugin packages](https://hosihikariframework.github.io/plugin-package/)
-- [C# plugins](https://hosihikariframework.github.io/authoring-csharp/)
-- [Out-of-process plugins](https://hosihikariframework.github.io/authoring-rpc/)
+- [Online documentation](https://hf.srcz.one/) · [简体中文](https://hf.srcz.one/zh/)
+- [Running a server](https://hf.srcz.one/server/) — carriers, install, updating, recovery
+- [Writing plugins](https://hf.srcz.one/develop/) — contract, packages, loaders
+- [Embedding the manager](https://hf.srcz.one/embed/)
 - [Examples](https://github.com/HosihikariFramework/hosihikariframework.github.io/tree/main/examples)
-- [Troubleshooting](https://hosihikariframework.github.io/troubleshooting/)
 
 ## Install
 
@@ -54,7 +52,7 @@ lip install github.com/HosihikariFramework/RpcLoader
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
 ```
 
-A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [quick start](https://hosihikariframework.github.io/quick-start/).
+A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [first plugin](https://hf.srcz.one/develop/first-plugin/).
 
 ## Plugin project packages
 
