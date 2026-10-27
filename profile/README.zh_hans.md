@@ -21,13 +21,11 @@
 
 ## 文档
 
-- [在线文档](https://hosihikariframework.github.io/zh/) · [English](https://hosihikariframework.github.io/)
-- [快速开始](https://hosihikariframework.github.io/zh/quick-start/)
-- [插件包与清单](https://hosihikariframework.github.io/zh/plugin-package/)
-- [C# 插件](https://hosihikariframework.github.io/zh/authoring-csharp/)
-- [进程外插件](https://hosihikariframework.github.io/zh/authoring-rpc/)
+- [在线文档](https://hf.srcz.one/zh/) · [English](https://hf.srcz.one/)
+- [运行服务器](https://hf.srcz.one/zh/server/) —— 载体、安装、升级、故障恢复
+- [写插件](https://hf.srcz.one/zh/develop/) —— 契约、包格式、加载器
+- [内嵌管理器](https://hf.srcz.one/zh/embed/)
 - [示例插件](https://github.com/HosihikariFramework/hosihikariframework.github.io/tree/main/examples)
-- [常见问题](https://hosihikariframework.github.io/zh/troubleshooting/)
 
 ## 安装
 
@@ -54,7 +52,7 @@ lip install github.com/HosihikariFramework/RpcLoader
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
 ```
 
-插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[快速开始](https://hosihikariframework.github.io/zh/quick-start/)。
+插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[第一个插件](https://hf.srcz.one/zh/develop/first-plugin/)。
 
 ## 插件工程包
 
