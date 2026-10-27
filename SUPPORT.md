@@ -5,7 +5,7 @@
 - [English](https://hf.srcz.one/)
 - [简体中文](https://hf.srcz.one/zh/)
 - [Troubleshooting](https://hf.srcz.one/develop/troubleshooting/)
-- [Plugin manager API](https://hf.srcz.one/embed/manager-api/)
+- [Embedding the plugin manager](https://hf.srcz.one/embed/)
 
 ## Bugs and feature requests
 
