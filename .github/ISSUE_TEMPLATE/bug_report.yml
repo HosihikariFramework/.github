@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Search existing issues and the [documentation](https://hf.srcz.one/) first.
+        Search existing issues and the [documentation](https://hoshi.srcz.one/) first.
   - type: textarea
     id: what-happened
     attributes:

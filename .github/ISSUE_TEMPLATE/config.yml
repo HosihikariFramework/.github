@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Hosihikari Framework documentation
-    url: https://hf.srcz.one/
+    url: https://hoshi.srcz.one/
     about: Setup guides, API reference, and troubleshooting.
   - name: Report a vulnerability
     url: https://github.com/HosihikariFramework/PluginManager/security/advisories/new

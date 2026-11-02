@@ -2,10 +2,10 @@
 
 ## Documentation
 
-- [English](https://hf.srcz.one/)
-- [简体中文](https://hf.srcz.one/zh/)
-- [Troubleshooting](https://hf.srcz.one/develop/troubleshooting/)
-- [Embedding the plugin manager](https://hf.srcz.one/embed/)
+- [English](https://hoshi.srcz.one/)
+- [简体中文](https://hoshi.srcz.one/zh/)
+- [Troubleshooting](https://hoshi.srcz.one/framework/develop/troubleshooting/)
+- [Embedding the plugin manager](https://hoshi.srcz.one/framework/embed/)
 
 ## Bugs and feature requests
 
