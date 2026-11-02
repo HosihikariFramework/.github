@@ -15,44 +15,40 @@ Loads and manages .NET plugins inside Minecraft Bedrock Dedicated Server (BDS). 
 
 A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed PluginManager discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. C# and F# loaders compile source at load; RpcLoader runs plugins out of process; the core's built-in loader handles precompiled assemblies.
 
-**Current release**: Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.1.0 · HostingShim v1.1.0 · C#/F#/RPC Loaders v1.0.0 · Plugin.Build / Testing 1.0.0 · Plugin Templates 1.0.1  
-**Platforms**: Windows x64 (LeviLamina 26.51, Endstone 0.11) · Linux x64 (Endstone 0.11, self-hosted BDS 1.21.3)  
+**Current release**: Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.2.0 · HostingShim v1.2.1 · C#/F#/RPC Loaders v1.1.0 · Plugin.Build / Testing 1.0.0 · Plugin Templates 1.0.1  
+**Platforms**: Windows x64 (LeviLamina 26.51, Endstone 0.11, self-hosted BDS 1.21.3.01) · Linux x64 (Endstone 0.11, self-hosted BDS 1.21.3)  
 **Contract**: `api_version` 2 · manifest `manifest_version` 1
 
 ## Documentation
 
-- [Online documentation](https://hf.srcz.one/) · [简体中文](https://hf.srcz.one/zh/)
-- [Running a server](https://hf.srcz.one/server/) — carriers, install, updating, recovery
-- [Writing plugins](https://hf.srcz.one/develop/) — contract, packages, loaders
-- [Embedding the manager](https://hf.srcz.one/embed/)
-- [Examples](https://github.com/HosihikariFramework/hosihikariframework.github.io/tree/main/examples)
+- [Online documentation](https://hoshi.srcz.one/) · [简体中文](https://hoshi.srcz.one/zh/)
+- [Running a server](https://hoshi.srcz.one/framework/server/) — carriers, install, updating, recovery
+- [Writing plugins](https://hoshi.srcz.one/framework/develop/) — contract, packages, loaders
+- [Embedding the manager](https://hoshi.srcz.one/framework/embed/)
+- [Examples](https://github.com/Hosihikari/hosihikari.github.io/tree/main/examples)
 
 ## Install
 
 Run in the server root:
 
 ```powershell
-# self-hosted Linux
-lip install github.com/HosihikariFramework/HostingShim
-
-# LeviLamina
-lip install github.com/HosihikariFramework/HostingShim#levilamina
-
-# Endstone (Windows / Linux)
-lip install github.com/HosihikariFramework/HostingShim#endstone
+sk init
+sk add hosihikari-hosting-levilamina     # LeviLamina
+# or: sk add hosihikari-hosting-endstone
+# or: sk add hosihikari-hosting-selfhosted
 
 # In-process source loaders
-lip install github.com/HosihikariFramework/CSharpLoader
-lip install github.com/HosihikariFramework/FSharpLoader
+sk add hosihikari-csharp
+sk add hosihikari-fsharp
 
 # Out-of-process loader
-lip install github.com/HosihikariFramework/RpcLoader
+sk add hosihikari-rpc
 
 # Precompiled plugin templates
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
 ```
 
-A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [first plugin](https://hf.srcz.one/develop/first-plugin/).
+A plugin package is a directory under `plugins/` whose name matches `name` in its manifest. Start with the [first plugin](https://hoshi.srcz.one/framework/develop/first-plugin/).
 
 ## Plugin project packages
 
@@ -83,7 +79,7 @@ dotnet add package Hosihikari.Testing --version 1.0.0
 | [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | Out-of-process templates: Node.js/TypeScript, Python, Kotlin/JVM |
 | [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | Fork of McMaster.NETCore.Plugins with RID-first native library resolution |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | HOCON implementation used for framework configuration |
-| [hosihikariframework.github.io](https://github.com/HosihikariFramework/hosihikariframework.github.io) | Documentation site and example plugins |
+| [hosihikari.github.io](https://github.com/Hosihikari/hosihikari.github.io) | Documentation site and example plugins |
 
 ## License and trust boundary
 

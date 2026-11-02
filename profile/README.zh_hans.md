@@ -15,44 +15,40 @@
 
 载体（LeviLamina、Endstone 或 Linux 自持态）加载原生 HostingShim，Shim 把 CLR 托管进服务器进程；托管核心 PluginManager 负责插件发现、依赖排序、隔离装载与生命周期。C# 与 F# 加载器在装载时编译源码；RpcLoader 在子进程中运行插件；核心内置加载器处理预编译程序集。
 
-**当前版本**：Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.1.0 · HostingShim v1.1.0 · C#/F#/RPC 加载器 v1.0.0 · 构建与测试包 1.0.0 · 插件模板 1.0.1  
-**平台**：Windows x64（LeviLamina 26.51、Endstone 0.11）· Linux x64（Endstone 0.11、自持态 BDS 1.21.3）  
+**当前版本**：Hosihikari.Plugin.Abstractions 1.1.0 · PluginManager v1.2.0 · HostingShim v1.2.1 · C#/F#/RPC 加载器 v1.1.0 · 构建与测试包 1.0.0 · 插件模板 1.0.1  
+**平台**：Windows x64（LeviLamina 26.51、Endstone 0.11、自持态 BDS 1.21.3.01）· Linux x64（Endstone 0.11、自持态 BDS 1.21.3）  
 **契约**：`api_version` 2 · 清单 `manifest_version` 1
 
 ## 文档
 
-- [在线文档](https://hf.srcz.one/zh/) · [English](https://hf.srcz.one/)
-- [运行服务器](https://hf.srcz.one/zh/server/) —— 载体、安装、升级、故障恢复
-- [写插件](https://hf.srcz.one/zh/develop/) —— 契约、包格式、加载器
-- [内嵌管理器](https://hf.srcz.one/zh/embed/)
-- [示例插件](https://github.com/HosihikariFramework/hosihikariframework.github.io/tree/main/examples)
+- [在线文档](https://hoshi.srcz.one/zh/) · [English](https://hoshi.srcz.one/)
+- [运行服务器](https://hoshi.srcz.one/zh/framework/server/) —— 载体、安装、升级、故障恢复
+- [写插件](https://hoshi.srcz.one/zh/framework/develop/) —— 契约、包格式、加载器
+- [内嵌管理器](https://hoshi.srcz.one/zh/framework/embed/)
+- [示例插件](https://github.com/Hosihikari/hosihikari.github.io/tree/main/examples)
 
 ## 安装
 
 在服务端根目录执行：
 
 ```powershell
-# 自持态 Linux
-lip install github.com/HosihikariFramework/HostingShim
-
-# LeviLamina
-lip install github.com/HosihikariFramework/HostingShim#levilamina
-
-# Endstone（Windows / Linux）
-lip install github.com/HosihikariFramework/HostingShim#endstone
+sk init
+sk add hosihikari-hosting-levilamina     # LeviLamina
+# 或：sk add hosihikari-hosting-endstone
+# 或：sk add hosihikari-hosting-selfhosted
 
 # 进程内源码加载器
-lip install github.com/HosihikariFramework/CSharpLoader
-lip install github.com/HosihikariFramework/FSharpLoader
+sk add hosihikari-csharp
+sk add hosihikari-fsharp
 
 # 进程外加载器
-lip install github.com/HosihikariFramework/RpcLoader
+sk add hosihikari-rpc
 
 # 预编译插件模板
 dotnet new install Hosihikari.Plugin.Templates::1.0.1
 ```
 
-插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[第一个插件](https://hf.srcz.one/zh/develop/first-plugin/)。
+插件包是 `plugins/` 下的一个目录，目录名与清单里的 `name` 一致。第一次使用见[第一个插件](https://hoshi.srcz.one/zh/framework/develop/first-plugin/)。
 
 ## 插件工程包
 
@@ -83,7 +79,7 @@ dotnet add package Hosihikari.Testing --version 1.0.0
 | [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | 进程外模板：Node.js/TypeScript、Python、Kotlin/JVM |
 | [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | McMaster.NETCore.Plugins 的 fork：本机库按当前 RID 优先解析 |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | 框架配置使用的 HOCON 实现 |
-| [hosihikariframework.github.io](https://github.com/HosihikariFramework/hosihikariframework.github.io) | 文档站点与示例插件 |
+| [hosihikari.github.io](https://github.com/Hosihikari/hosihikari.github.io) | 文档站点与示例插件 |
 
 ## 许可与信任边界
 

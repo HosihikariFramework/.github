@@ -5,7 +5,7 @@ organization unless that repository has its own `CONTRIBUTING.md`.
 
 ## Before opening a pull request
 
-- Search existing issues and the [documentation](https://hf.srcz.one/).
+- Search existing issues and the [documentation](https://hoshi.srcz.one/).
 - Use the issue templates for bugs, feature requests, and documentation problems.
 - For a large API, lifecycle, or architecture change, open an issue first and describe the design and
   trade-offs.
