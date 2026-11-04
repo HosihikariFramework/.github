@@ -77,7 +77,7 @@ dotnet add package Hosihikari.Testing --version 1.0.0
 | [CSharpPluginTemplate](https://github.com/HosihikariFramework/CSharpPluginTemplate) | 源码 C# 插件模板 |
 | [FSharpPluginTemplate](https://github.com/HosihikariFramework/FSharpPluginTemplate) | 源码 F# 插件模板 |
 | [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | 进程外模板：Node.js/TypeScript、Python、Kotlin/JVM |
-| [Hosihikari.McMaster.NETCore.Plugins](https://github.com/HosihikariFramework/Hosihikari.McMaster.NETCore.Plugins) | McMaster.NETCore.Plugins 的 fork：本机库按当前 RID 优先解析 |
+| [DotNetCorePlugins](https://github.com/HosihikariFramework/DotNetCorePlugins) | McMaster.NETCore.Plugins 的 fork：本机库按当前 RID 优先解析 |
 | [HOCON](https://github.com/HosihikariFramework/HOCON) | 框架配置使用的 HOCON 实现 |
 | [hosihikari.github.io](https://github.com/Hosihikari/hosihikari.github.io) | 文档站点与示例插件 |
 
