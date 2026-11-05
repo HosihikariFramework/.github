@@ -7,8 +7,9 @@ fixes while the next line is being prepared. Older lines and pre-release builds 
 
 | Component | Supported |
 | --- | --- |
-| PluginAbstractions, PluginManager, HostingShim | 1.1.x |
-| C# / F# / RPC Loaders | 1.0.x |
+| PluginAbstractions | 1.1.x |
+| PluginManager, HostingShim | 1.2.x |
+| C# / F# / RPC Loaders | 1.1.x |
 | Plugin.Build, Testing, Plugin Templates | 1.0.x |
 
 ## Reporting a vulnerability
