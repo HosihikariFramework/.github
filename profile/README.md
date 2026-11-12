@@ -15,7 +15,7 @@ Loads and manages .NET plugins inside Minecraft Bedrock Dedicated Server (BDS). 
 
 A carrier (LeviLamina, Endstone, or the Linux self-hosted carrier) loads the native HostingShim, which hosts the CLR inside the server process. The managed PluginManager discovers plugins, resolves dependencies, isolates them, and drives their lifecycle. C# and F# loaders compile source at load; RpcLoader runs plugins out of process; the core's built-in loader handles precompiled assemblies.
 
-**Current release**: Hosihikari.Plugin.Abstractions 1.2.0 · PluginManager v1.3.0 · HostingShim v1.2.2 · C#/F#/RPC Loaders v1.2.0 · Plugin.Build / Testing 1.1.0 · Plugin Templates 1.1.0  
+**Current release**: Hosihikari.Plugin.Abstractions 1.2.0 · PluginManager v1.3.0 · HostingShim v1.2.3 · C#/F#/RPC Loaders v1.2.0 · Plugin.Build / Testing 1.1.0 · Plugin Templates 1.1.0  
 **Platforms**: Windows x64 (LeviLamina 26.60.6, Endstone 0.11.15, self-hosted BDS 1.21.3) · Linux x64 (Endstone 0.11.15, self-hosted BDS 1.21.3)  
 **Contract**: `api_version` 2 · manifest `manifest_version` 1
 
