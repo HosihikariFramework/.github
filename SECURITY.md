@@ -8,7 +8,8 @@ fixes while the next line is being prepared. Older lines and pre-release builds 
 | Component | Supported | Previous line |
 | --- | --- | --- |
 | PluginAbstractions | 1.2.x | 1.1.x |
-| PluginManager, HostingShim | 1.3.x | 1.2.x |
+| PluginManager | 1.3.x | 1.2.x |
+| HostingShim | 1.2.x | 1.1.x |
 | C# / F# / RPC Loaders | 1.2.x | 1.1.x |
 | Plugin.Build, Testing, Plugin Templates | 1.1.x | 1.0.x |
 
