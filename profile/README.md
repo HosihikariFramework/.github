@@ -78,7 +78,7 @@ dotnet add package Hosihikari.Testing --version 1.1.0
 | [FSharpPluginTemplate](https://github.com/HosihikariFramework/FSharpPluginTemplate) | Source F# plugin template |
 | [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | Out-of-process templates: Node.js/TypeScript, Python, Kotlin/JVM |
 | [DotNetCorePlugins](https://github.com/HosihikariFramework/DotNetCorePlugins) | Fork of McMaster.NETCore.Plugins with RID-first native library resolution |
-| [HOCON](https://github.com/HosihikariFramework/HOCON) | HOCON implementation used for framework configuration |
+| [HOCON](https://github.com/Hosihikari/HOCON) | HOCON implementation used for framework configuration |
 | [hosihikari.github.io](https://github.com/Hosihikari/hosihikari.github.io) | Documentation site and example plugins |
 
 ## License and trust boundary
