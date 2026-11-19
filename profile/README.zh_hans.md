@@ -78,8 +78,6 @@ dotnet add package Hosihikari.Testing --version 1.1.0
 | [FSharpPluginTemplate](https://github.com/HosihikariFramework/FSharpPluginTemplate) | 源码 F# 插件模板 |
 | [RpcPluginTemplate](https://github.com/HosihikariFramework/RpcPluginTemplate) | 进程外模板：Node.js/TypeScript、Python、Kotlin/JVM |
 | [DotNetCorePlugins](https://github.com/HosihikariFramework/DotNetCorePlugins) | McMaster.NETCore.Plugins 的 fork：本机库按当前 RID 优先解析 |
-| [HOCON](https://github.com/Hosihikari/HOCON) | 框架配置使用的 HOCON 实现 |
-| [hosihikari.github.io](https://github.com/Hosihikari/hosihikari.github.io) | 文档站点与示例插件 |
 
 ## 许可与信任边界
 
